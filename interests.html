@@ -1,64 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>İlgi Alanlarım</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>İlgi Alanlarım | Yasir Arslan</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Yasir Arslan</h1>
-    <p>Yazılım öğreniyorum, düzenli üretiyorum.</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımda</a></li>
-        <li><a href="interests.html">İlgi Alanlarım</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">İlgi Alanlarım</h1>
+      <p class="site-tagline">Teknoloji ve kişisel ilgi alanlarım</p>
+
+      <nav class="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a class="active" href="interests.html">İlgi Alanlarım</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Teknoloji ve Hobiler</h2>
+  <main class="container">
+    <section class="card">
+      <h2>Teknoloji Alanındaki İlgi Alanlarım</h2>
+      <ul>
+        <li>Web geliştirme</li>
+        <li>Yapay zekâ uygulamaları</li>
+        <li>Mobil uygulama geliştirme</li>
+        <li>Backend temelleri (API mantığı, veri akışı)</li>
+      </ul>
+    </section>
 
-    <h3>İlgi Alanları Listesi (İç içe ul)</h3>
-    <ul>
-      <li>Yazılım
-        <ul>
-          <li>Web geliştirme</li>
-          <li>UI tasarım</li>
-        </ul>
-      </li>
-      <li>Üretkenlik
-        <ul>
-          <li>Not alma sistemleri</li>
-          <li>Zaman yönetimi</li>
-        </ul>
-      </li>
-    </ul>
+    <section class="card">
+      <h2>Günlük Çalışma Rutinim</h2>
+      <ol>
+        <li>Ders materyallerini gözden geçirmek</li>
+        <li>Kodlama pratiği yapmak</li>
+        <li>Yeni teknolojiler araştırmak</li>
+        <li>Küçük proje/mini demo geliştirmek</li>
+      </ol>
+    </section>
 
-    <h3>Öncelik Sıram (ol)</h3>
-    <ol>
-      <li>Her hafta mini proje</li>
-      <li>Yeni bir konu öğrenme</li>
-      <li>Öğrendiklerimi paylaşma</li>
-    </ol>
+    <section class="card">
+      <h2>Web Teknolojileri Sözlüğü</h2>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Web sayfalarının iskeletini oluşturan işaretleme dilidir.</dd>
 
-    <h3>Terimler (dl, dt, dd)</h3>
-    <dl>
-      <dt>HTML</dt>
-      <dd>Web sayfasının iskeletini oluşturan işaretleme dili.</dd>
-      <dt>CSS</dt>
-      <dd>Web sayfasının görünümünü düzenleyen stil dili.</dd>
-      <dt>JavaScript</dt>
-      <dd>Sayfaya etkileşim kazandıran programlama dili.</dd>
-    </dl>
+        <dt>CSS</dt>
+        <dd>Web sayfalarının görsel tasarımını ve düzenini sağlar.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Web sayfalarına etkileşim kazandırır.</dd>
+      </dl>
+
+      <p class="back-link"><a href="index.html">← Ana sayfaya geri dön</a></p>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Yasir Arslan | Web Programlama Dersi</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yil"></span> Yasir Arslan | Web Programlama Dersi</p>
+    </div>
   </footer>
 
   <script src="scripts/main.js"></script>

@@ -1,50 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hakkımda</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hakkımda | Yasir Arslan</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Yasir Arslan</h1>
-    <p>Yazılım öğreniyorum, düzenli üretiyorum.</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımda</a></li>
-        <li><a href="interests.html">İlgi Alanlarım</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Hakkımda</h1>
+      <p class="site-tagline">Kendimi ve hedeflerimi anlattığım sayfa</p>
+
+      <nav class="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a class="active" href="about.html">Hakkımda</a></li>
+          <li><a href="interests.html">İlgi Alanlarım</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Ben Kimim?</h2>
-    <p>Ben <strong>Yasir Arslan</strong>. Web teknolojilerine ilgi duyuyorum ve <em>sürekli öğrenme</em> odaklı ilerliyorum.</p>
+  <main class="container">
+    <section class="card">
+      <h2>Ben Kimim?</h2>
+      <p>
+        Merhaba, ben <strong>Yasir Arslan</strong>. Bilgisayar Mühendisliği öğrencisiyim ve
+        web teknolojileriyle ilgileniyorum. Öğrenirken düzenli ilerlemeyi ve küçük adımlarla
+        ilerlemeyi seviyorum.
+      </p>
+      <p>
+        Şu sıralar <em>HTML/CSS</em> ile sağlam bir temel kurup, ardından <em>JavaScript</em> tarafında
+        daha fazla pratik yapmayı hedefliyorum. Ayrıca projelerimi GitHub üzerinde düzenli tutmaya
+        ve paylaşmaya özen gösteriyorum.
+      </p>
 
-    <blockquote>
-      "Başarı, her gün küçük adımlarla ilerlemektir."
-    </blockquote>
+      <blockquote>
+        "İyi bir web sitesi, hem kullanıcıyı hem geliştiriciyi mutlu eder."
+      </blockquote>
+    </section>
 
-    <h2>Eğitim Yolculuğum</h2>
-    <ol>
-      <li>Temel HTML ve CSS</li>
-      <li>JavaScript başlangıç</li>
-      <li>Küçük web projeleri geliştirme</li>
-    </ol>
+    <section class="card">
+      <h2>Zaman Çizelgesi</h2>
+      <div class="grid">
+        <div>
+          <h3>Eğitim</h3>
+          <ul>
+            <li>Marmara Üniversitesi - Bilgisayar Mühendisliği</li>
+            <li>Web Programlama Dersi - GitHub Pages ile yayın</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hedefler</h3>
+          <ul>
+            <li>Semantik HTML yapısını doğru kullanmak</li>
+            <li>Basit ama temiz arayüzler tasarlamak</li>
+            <li>JS ile küçük etkileşimler eklemek</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2>Güçlü Yönlerim</h2>
-    <ul>
-      <li>Disiplinli çalışma</li>
-      <li>Problem çözme</li>
-      <li>Takım içinde iletişim</li>
-    </ul>
+      <p class="back-link"><a href="index.html">&larr; Ana sayfaya geri dön</a></p>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Yasir Arslan | Web Programlama Dersi</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yil"></span> Yasir Arslan | Web Programlama Dersi</p>
+    </div>
   </footer>
 
   <script src="scripts/main.js"></script>

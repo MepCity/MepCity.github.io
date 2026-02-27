@@ -1,37 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ana Sayfa</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yasir Arslan | Mini Portfolyo</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Yasir Arslan</h1>
-    <p>Yazılım öğreniyorum, düzenli üretiyorum.</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımda</a></li>
-        <li><a href="interests.html">İlgi Alanlarım</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Yasir Arslan</h1>
+      <p class="site-tagline">Bilgisayar Mühendisliği • Web Programlama • Mini Portfolyo</p>
+
+      <nav class="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a class="active" href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a href="interests.html">İlgi Alanlarım</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Hoş Geldiniz</h2>
-    <p>Bu site Web Programlama dersi için hazırlanmıştır.</p>
-    <p>Kendimi ve ilgi alanlarımı tanıttığım sayfalara yukarıdaki menüden ulaşabilirsiniz.</p>
-    <p><a href="#hedef">Sayfa içi bağlantı örneği</a></p>
+  <main id="icerik" class="container">
+    <section class="card">
+      <h2>Hoş Geldiniz</h2>
+      <p>
+        Bu sayfa, Web Programlama dersi kapsamında hazırlanmış örnek bir statik web sitesidir.
+        Amaç; HTML, CSS ve JavaScript temel yapılarını pratik ederek GitHub Pages üzerinden yayınlamaktır.
+      </p>
 
-    <h2 id="hedef">Hedeflerim</h2>
-    <p>Frontend geliştirme konusunda proje tabanlı ilerlemek istiyorum.</p>
+      <div class="quick-actions">
+        <a class="btn" href="about.html">Hakkımda</a>
+        <a class="btn" href="interests.html">İlgi Alanlarım</a>
+        <a class="btn" href="contact.html">İletişim</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Hızlı Bilgiler</h2>
+        <ul class="clean-list">
+          <li><strong>Üniversite:</strong> Marmara Üniversitesi</li>
+          <li><strong>Bölüm:</strong> Bilgisayar Mühendisliği</li>
+          <li><strong>Odak:</strong> Yazılım geliştirme, web teknolojileri</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Öğrenme Hedeflerim</h2>
+        <ol>
+          <li>HTML semantik yapısını oturtmak</li>
+          <li>CSS ile düzenli ve okunabilir arayüz tasarlamak</li>
+          <li>JavaScript ile basit etkileşimler eklemek</li>
+          <li>Projeleri GitHub Pages ile yayınlamak</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="card" id="hedef">
+      <h2>Faydalı Bağlantılar</h2>
+      <p>Web geliştirme öğrenirken sık kullandığım kaynaklar:</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noreferrer">W3Schools</a></li>
+        <li><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a></li>
+      </ul>
+
+      <p class="note">
+        <strong>Hızlı bağlantı örneği:</strong> Bu bölüm, sayfa içi anchor (#hedef) örneği için eklendi.
+      </p>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Yasir Arslan | Web Programlama Dersi</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yil"></span> Yasir Arslan | Web Programlama Dersi</p>
+    </div>
   </footer>
 
   <script src="scripts/main.js"></script>

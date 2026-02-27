@@ -1,40 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>İletişim</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>İletişim | Yasir Arslan</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Yasir Arslan</h1>
-    <p>Yazılım öğreniyorum, düzenli üretiyorum.</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımda</a></li>
-        <li><a href="interests.html">İlgi Alanlarım</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">İletişim</h1>
+      <p class="site-tagline">Benimle iletişime geçebileceğiniz bilgiler</p>
+
+      <nav class="site-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="about.html">Hakkımda</a></li>
+          <li><a href="interests.html">İlgi Alanlarım</a></li>
+          <li><a class="active" href="contact.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>İletişim Bilgileri</h2>
+  <main class="container">
+    <section class="card">
+      <h2>İletişim Bilgilerim</h2>
+      <ul class="clean-list">
+        <li>📧 E-posta: <a href="mailto:ornek@example.com">ornek@example.com</a></li>
+        <li>💻 GitHub: <a href="#" target="_blank" rel="noreferrer">GitHub Profilim</a></li>
+        <li>🔗 LinkedIn: <a href="#" target="_blank" rel="noreferrer">LinkedIn Profilim</a></li>
+      </ul>
 
-    <h3>E-posta</h3>
-    <p><a href="mailto:hamasetyasir@gmail.com">hamasetyasir@gmail.com</a></p>
+      <p class="note">
+        Not: GitHub/LinkedIn linklerini kendi profil adreslerinle güncelleyebilirsin.
+      </p>
+    </section>
 
-    <h3>Telefon</h3>
-    <p><a href="tel:+905418557902">0541 855 79 02</a></p>
+    <section class="card">
+      <h2>Sık Sorulan Sorular</h2>
 
-    <h3>Sosyal Medya</h3>
-    <p><a href="https://github.com/MepCity" target="_blank" rel="noopener">GitHub Profilim</a></p>
+      <h3>Mesajlara ne kadar sürede dönüş yapıyorsunuz?</h3>
+      <p>Genellikle 24 saat içinde e-posta yoluyla dönüş yapmaya çalışırım.</p>
+
+      <h3>Projelerde iş birliğine açık mısınız?</h3>
+      <p>Evet, özellikle eğitim ve açık kaynak projelerinde iş birliklerine açığım.</p>
+
+      <p class="back-link"><a href="index.html">← Ana sayfaya geri dön</a></p>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Yasir Arslan | Web Programlama Dersi</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yil"></span> Yasir Arslan | Web Programlama Dersi</p>
+    </div>
   </footer>
 
   <script src="scripts/main.js"></script>

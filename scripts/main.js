@@ -1,13 +1,14 @@
-// Aktif sayfa linkine basit bir vurgu ekler.
-(function markActivePage() {
-  var links = document.querySelectorAll('nav a');
-  var current = window.location.pathname.split('/').pop() || 'index.html';
+(function () {
+  var yil = document.getElementById("yil");
+  if (yil) yil.textContent = new Date().getFullYear();
 
-  links.forEach(function (link) {
-    var href = link.getAttribute('href');
-    if (href === current) {
-      link.style.backgroundColor = '#1e293b';
-      link.style.color = '#ffffff';
-    }
-  });
+  // Aktif link yoksa URL'e göre işaretle (opsiyonel)
+  var path = (window.location.pathname || "").split("/").pop();
+  if (!path) path = "index.html";
+
+  var links = document.querySelectorAll(".site-nav a");
+  for (var i = 0; i < links.length; i++) {
+    var href = links[i].getAttribute("href");
+    if (href === path) links[i].classList.add("active");
+  }
 })();
