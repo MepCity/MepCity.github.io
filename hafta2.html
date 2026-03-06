@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Temel Ödevi</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #f4f1ec;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    h1, h2, p {
+      margin-bottom: 0.75rem;
+    }
+
+    nav {
+      background-color: #1a1a2e;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo {
+      color: #e8d5b7;
+      font-size: 1.1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 1rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: inline-block;
+      color: #c9b99a;
+      text-decoration: none;
+      padding: 1rem 1.2rem;
+      font-size: 0.92rem;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid transparent;
+      transition: color 0.25s, border-bottom-color 0.25s;
+    }
+
+    nav ul li a:hover {
+      color: #f5e6cc;
+      border-bottom-color: #e8a87c;
+    }
+
+    .wrapper {
+      max-width: 960px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+    }
+
+    header {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-left: 5px solid #c0392b;
+      padding: 2rem 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #1a1a2e;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      font-size: 0.97rem;
+      color: #555;
+      line-height: 1.75;
+      max-width: 680px;
+    }
+
+    .columns {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .content {
+      flex: 3;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 1.8rem 2rem;
+    }
+
+    .content h2 {
+      font-size: 1.15rem;
+      color: #c0392b;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 0.95rem;
+      color: #3a3a3a;
+      line-height: 1.85;
+      text-align: justify;
+    }
+
+    .sidebar {
+      flex: 2;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 1.8rem 2rem;
+    }
+
+    .sidebar h2 {
+      font-size: 1.15rem;
+      color: #1a1a2e;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .sidebar p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    footer {
+      background-color: #1a1a2e;
+      color: #a09070;
+      text-align: center;
+      padding: 1.2rem 1rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <span class="logo">CSS Temel Ödevi</span>
+    <ul>
+      <li><a href="#">Ana Sayfa</a></li>
+      <li><a href="#">Hakkında</a></li>
+      <li><a href="#">Hizmetler</a></li>
+      <li><a href="#">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <header>
+      <h1>HTML &amp; CSS ile Temel Sayfa Düzeni</h1>
+      <p>
+        Verilen görsel düzene benzer şekilde basit bir web sayfası oluşturulmuştur.
+        CSS'in temel özellikleri olan <strong>display, width, height, margin, padding,
+        border</strong> ve seçiciler (selector) uygulanmıştır. Yalnızca
+        HTML5 + CSS3 kullanılmış; hazır framework kullanılmamıştır.
+      </p>
+    </header>
+
+    <div class="columns">
+      <div class="content">
+        <h2>İçerik</h2>
+        <p>
+          Bu alan örnek içerik metinleri bulunmaktadır. CSS özellikleriyle bu
+          metinler arasında <strong>boşluklar</strong> (line-height) ve
+          hizalamalar (text-align) düzenlenmektedir. Font büyüklüğü, renk ve
+          satır aralığı gibi özellikler okunabilirliği artırmaktadır.
+        </p>
+        <p>
+          Önce CSS ile kutuları ve alanları yan yana getirmeyi, ardından alt alta
+          yerleştirmeyi öğrendik. Şimdi ise CSS seçicilerini kullanarak grup ve
+          hiyerarşik seçimler yapmayı göreceğiz. Seçiciler, belirli HTML
+          elemanlarına kolayca stil vermemizi sağlar.
+        </p>
+      </div>
+
+      <div class="sidebar">
+        <h2>Yan Menü / Bilgi</h2>
+        <p>
+          Bu alan yan menü veya bilgi kısmıdır. CSS ile genişlik (width),
+          yükseklik (height), kenar boşlukları (margin/padding) ve kenarlık
+          (border) özelliklerini kullanarak düzenleyebiliriz.
+        </p>
+        <p>
+          Öğrendiklerimizi hiyerarşik ve grup seçicilerle uygulayıp farklı
+          bölümlere ayrı stiller verebiliriz. Bu sayede sayfa düzeni hem
+          estetik hem de düzenli görünür.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 CSS Temel Örnek. Bu sayfa basit bir HTML+CSS alıştırmasıdır.
+    </footer>
+  </div>
+</body>
+</html>
